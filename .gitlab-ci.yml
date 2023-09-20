@@ -1,0 +1,12 @@
+stages:
+  - on-commit-checks
+
+image: python:3.11
+
+commit-sanity-checks:
+  stage: on-commit-checks
+  before_script:
+    - pip install black isort
+  script:
+    - black app --extend-exclude migrations/ --check
+    - isort app --profile black --extend-skip migrations -c

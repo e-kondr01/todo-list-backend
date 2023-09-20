@@ -1,0 +1,18 @@
+{
+  "flake8.importStrategy": "fromEnvironment",
+  "pylint.importStrategy": "fromEnvironment",
+  "pylint.args": [
+    "--rcfile=${workspaceFolder}/app/.pylintrc"
+  ],
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true,
+  },
+  "python.analysis.extraPaths": [
+    "app"
+  ],
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "isort.importStrategy": "fromEnvironment",
+}
