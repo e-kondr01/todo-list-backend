@@ -218,8 +218,8 @@ if env.bool("USE_SSL", default=False):
 # DRF Spectacular
 
 SPECTACULAR_SETTINGS = {
-    "TITLE": "Kanban Board Django REST API",
-    "DESCRIPTION": "Kanban Board Django REST API",
+    "TITLE": "Todo list Django REST API",
+    "DESCRIPTION": "Todo list Django REST API",
     "VERSION": "0.0.1",
     "SERVE_INCLUDE_SCHEMA": False,
 }

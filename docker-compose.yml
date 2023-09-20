@@ -13,7 +13,7 @@ services:
 
   backend:
     restart: always
-    container_name: kanban-board-backend
+    container_name: todo-list-backend
     build: ./app
     command: bash -c "
       python manage.py migrate &&
