@@ -2,6 +2,10 @@
 
 Using Django Rest Framework
 
+Развёрнутая Swagger документация API:
+
+[http://93.183.72.68:8000/api/schema/swagger-ui/](http://93.183.72.68:8000/api/schema/swagger-ui/)
+
 ## Python version
 3.11
 
