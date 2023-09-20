@@ -15,6 +15,7 @@ urlpatterns_ = [
     path("auth/jwt/create/", TokenObtainPairView.as_view(), name="jwt-create"),
     path("auth/", include("djoser.urls.jwt")),
     path("auth/", include("djoser.urls")),
+    path("", include("tasks.urls")),
 ]
 
 urlpatterns = [path("api/", include(urlpatterns_))]
