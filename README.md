@@ -1,4 +1,6 @@
-# Kanban board backend
+# Todo list backend
+
+Using Django Rest Framework
 
 ## Python version
 3.11
