@@ -222,6 +222,7 @@ SPECTACULAR_SETTINGS = {
     "DESCRIPTION": "Todo list Django REST API",
     "VERSION": "0.0.1",
     "SERVE_INCLUDE_SCHEMA": False,
+    "PREPROCESSING_HOOKS": ["app.drf_spectacular_override.exclude_paths"],
 }
 
 
