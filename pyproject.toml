@@ -1,0 +1,7 @@
+[tool.isort]
+src_paths = ["app"]
+extend_skip = ["migrations"]
+profile = "black"
+
+[tool.black]
+extend-exclude = "migrations/"
