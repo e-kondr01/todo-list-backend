@@ -19,6 +19,10 @@ class Task(models.Model):
         verbose_name="Пользователь",
     )
 
+    is_completed = models.BooleanField(default=False, verbose_name="Выполнена")
+
+    priority = models.PositiveSmallIntegerField(default=0, verbose_name="Приоритет")
+
     created_at = models.DateTimeField(
         auto_now_add=True, verbose_name="Дата и время создания"
     )
@@ -33,4 +37,4 @@ class Task(models.Model):
     class Meta:
         verbose_name = "Задача"
         verbose_name_plural = "Задачи"
-        ordering = ["-due_at", "-created_at"]
+        ordering = ["-due_at", "priority"]

@@ -5,7 +5,6 @@ from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView
 from users.views import TokenObtainPairView
 
 urlpatterns_ = [
-    path("admin/", admin.site.urls),
     path("schema/", SpectacularAPIView.as_view(), name="schema"),
     path(
         "schema/swagger-ui/",
@@ -18,4 +17,4 @@ urlpatterns_ = [
     path("", include("tasks.urls")),
 ]
 
-urlpatterns = [path("api/", include(urlpatterns_))]
+urlpatterns = [path("admin/", admin.site.urls), path("api/", include(urlpatterns_))]
