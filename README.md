@@ -6,6 +6,13 @@ Using Django Rest Framework
 
 [http://93.183.72.68:8000/api/schema/swagger-ui/](http://93.183.72.68:8000/api/schema/swagger-ui/)
 
+Для запуска юнит тестов (после установки зависимостей):
+
+```bash
+cd app
+python manage.py test
+```
+
 ## Python version
 3.11
 
